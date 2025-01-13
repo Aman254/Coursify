@@ -2,20 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+  .bg-faded-purple {
+    @apply bg-[#ECE9FF];
+  }
+  .bg-faded-blue {
+    @apply bg-[#CEE4F8];
+  }
+  .bg-faded-gray {
+    @apply bg-[#F4F6F9];
+  }
+  .bg-faded-green {
+    @apply bg-[#E5F3DD];
+  }
+  .bg-faded-emerald {
+    @apply bg-[##E5F1EE];
+  }
+  .bg-faded-red {
+    @apply bg-[#FFEBEA];
+  }
+  .bg-positive {
+    @apply bg-[#429482];
+  }
+  .bg-negative {
+    @apply bg-[#E55D57];
+  }
+  .border-positive {
+    @apply border border-[#429482];
+  }
+  .border-negative {
+    @apply border border-[#E55D57];
+  }
+  .line-color {
+    @apply bg-[#D3D5DA];
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins), sans-serif;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }
