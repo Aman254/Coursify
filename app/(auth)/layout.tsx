@@ -25,7 +25,7 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
         <h1 className="text-2xl font-semibold text-center mb-1">Sign in</h1>
         <p className="text-center text-sm text-gray-600 mb-6">
           Don&apos;t have an account yet?{" "}
-          <Link href="/signup" className="text-[#6C5DD3] hover:underline">
+          <Link href="/sign-in" className="text-[#6C5DD3] hover:underline">
             Sign up here
           </Link>
         </p>

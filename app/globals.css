@@ -10,6 +10,22 @@
   .flex-between {
     @apply flex justify-between items-center;
   }
+
+  .primary-background {
+    @apply bg-[#6C5DD3];
+  }
+  .primary-hover-background {
+    @apply bg-[#6D28D9];
+  }
+  .primary-text {
+    @apply text-[#6C5DD3];
+  }
+  .primary-text-hover {
+    @apply hover:text-[#6D28D9];
+  }
+  .primary-border {
+    @apply border-[#6C5DD3];
+  }
   .bg-faded-purple {
     @apply bg-[#ECE9FF];
   }

@@ -1,21 +1,16 @@
-import { auth, signOut } from "@/auth";
-import { Button } from "@/components/ui/button";
-import ROUTES from "@/constants/routes";
+import { auth } from "@/auth";
+import CTA from "@/components/Home/Cta";
+import Footer from "@/components/Home/Footer";
+import HeroSection from "@/components/Home/HeroSection";
 
 export default async function Home() {
   const session = await auth();
   console.log(session);
   return (
-    <h1 className="mt-40  bg-white">
-      <form
-        className="px-10 pt-[100px]"
-        action={async () => {
-          "use server";
-          await signOut({ redirectTo: ROUTES.SIGN_IN });
-        }}
-      >
-        <Button type="submit">Log Out</Button>
-      </form>
-    </h1>
+    <div className="w-full">
+      <HeroSection />
+      <CTA />
+      <Footer />
+    </div>
   );
 }
